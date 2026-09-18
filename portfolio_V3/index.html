@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Ayush Pal | Portfolio</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        Ayush<span>.</span>
+    </a>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            HELLO, I'M
+        </p>
+
+        <h1>
+            Ayush Pal
+        </h1>
+
+        <h2>
+            Full Stack Developer
+        </h2>
+
+        <p class="hero-description">
+
+            I build modern websites,
+            web applications and digital
+            experiences.
+
+        </p>
+
+
+        <div class="buttons">
+
+            <a
+                href="#projects"
+                class="btn primary"
+            >
+                View My Work
+            </a>
+
+
+            <a
+                href="#contact"
+                class="btn secondary"
+            >
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="section-heading">
+
+        <p>ABOUT ME</p>
+
+        <h2>
+            Who I Am
+        </h2>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <div class="about-image">
+
+            <img
+                id="profileImage"
+                src="assets/images/profile.jpeg"
+                alt="Ayush Pal"
+            >
+
+        </div>
+
+
+        <div class="about-text">
+
+            <h2 id="profileName">
+                Ayush Pal
+            </h2>
+
+
+            <p id="profileBio">
+
+                I'm Ayush Pal, a developer
+                interested in creating modern,
+                useful and interactive web
+                applications.
+
+            </p>
+
+
+            <p>
+
+                I enjoy learning new
+                technologies and turning
+                ideas into real projects.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section">
+
+    <div class="section-heading">
+
+        <p>MY EXPERTISE</p>
+
+        <h2>
+            Skills
+        </h2>
+
+    </div>
+
+
+    <!-- FIRESTORE WILL LOAD SKILLS HERE -->
+
+    <div
+        id="skillsContainer"
+        class="cards"
+    >
+
+        <p>
+            Loading skills...
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section">
+
+    <div class="section-heading">
+
+        <p>MY WORK</p>
+
+        <h2>
+            Projects
+        </h2>
+
+    </div>
+
+
+    <!-- FIRESTORE WILL LOAD PROJECTS HERE -->
+
+    <div
+        id="projectsContainer"
+        class="projects"
+    >
+
+        <p>
+            Loading projects...
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section">
+
+    <div class="section-heading">
+
+        <p>GET IN TOUCH</p>
+
+        <h2>
+            Contact Me
+        </h2>
+
+    </div>
+
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="contactName"
+            placeholder="Your Name"
+            required
+        >
+
+
+        <input
+            type="email"
+            id="contactEmail"
+            placeholder="Your Email"
+            required
+        >
+
+
+        <textarea
+            id="contactMessage"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+
+        <button type="submit">
+
+            Send Message
+
+        </button>
+
+    </form>
+
+
+    <p id="formStatus"></p>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Ayush Pal
+    </p>
+
+</footer>
+
+
+
+<!-- ================= FIREBASE / SCRIPT ================= -->
+
+<script
+    type="module"
+    src="./script.js"
+></script>
+
+
+</body>
+
+</html>
+

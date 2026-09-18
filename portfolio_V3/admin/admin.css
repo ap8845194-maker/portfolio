@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            #302060,
+            #09090d 50%
+        );
+
+    color: white;
+
+}
+
+
+.login-container {
+
+    width: 100%;
+
+    padding: 20px;
+
+}
+
+
+.login-card {
+
+    max-width: 430px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    background: rgba(
+        21,
+        21,
+        29,
+        0.92
+    );
+
+    border:
+        1px solid #292936;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,0.45);
+
+}
+
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+
+.logo span {
+
+    color: #7c5cff;
+
+}
+
+
+.label {
+
+    color: #8d78ff;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+h1 {
+
+    font-size: 38px;
+
+    margin:
+        10px 0;
+
+}
+
+
+.subtitle {
+
+    color: #888;
+
+    margin-bottom: 30px;
+
+}
+
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+label {
+
+    color: #ccc;
+
+    margin-top: 10px;
+
+}
+
+
+input {
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    border:
+        1px solid #30303b;
+
+    background: #101017;
+
+    color: white;
+
+    outline: none;
+
+}
+
+
+input:focus {
+
+    border-color:
+        #7c5cff;
+
+}
+
+
+button {
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #7c5cff;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    opacity: 0.9;
+
+}
+
+
+#loginStatus {
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #ff6b6b;
+
+}
+
+
+.back-link {
+
+    display: block;
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+}
+
+
+.back-link:hover {
+
+    color: white;
+
+}
+
+
+@media(max-width: 500px) {
+
+    .login-card {
+
+        padding: 30px 22px;
+
+    }
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+}

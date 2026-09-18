@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | Ayush Portfolio</title>
+
+    <link
+        rel="stylesheet"
+        href="dashboard.css"
+    >
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                A
+            </div>
+
+            <div>
+                <h2>Ayush</h2>
+                <span>Portfolio Admin</span>
+            </div>
+
+        </div>
+
+
+        <nav class="nav">
+
+            <p class="nav-title">
+                MAIN
+            </p>
+
+            <a
+                href="#"
+                class="nav-link active"
+            >
+                <span>▦</span>
+                Dashboard
+            </a>
+
+
+            <a
+                href="#projects"
+                class="nav-link"
+            >
+                <span>◈</span>
+                Projects
+            </a>
+
+
+            <a
+                href="#messages"
+                class="nav-link"
+            >
+                <span>✉</span>
+                Messages
+                <span
+                    class="badge"
+                    id="messageBadge"
+                >
+                    0
+                </span>
+            </a>
+
+
+            <p class="nav-title">
+                MANAGE
+            </p>
+
+
+            <a
+                href="#skills"
+                class="nav-link"
+            >
+                <span>◆</span>
+                Skills
+            </a>
+
+
+            <a
+                href="#profile"
+                class="nav-link"
+            >
+                <span>●</span>
+                Profile
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a
+                href="../index.html"
+                target="_blank"
+                class="view-site"
+            >
+                ↗ View Website
+            </a>
+
+
+            <button
+                id="logoutBtn"
+                class="logout"
+            >
+                <span>⇥</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button
+                id="menuBtn"
+                class="menu-btn"
+            >
+                ☰
+            </button>
+
+
+            <div class="topbar-title">
+
+                <span>
+                    ADMIN PANEL
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="admin-profile">
+
+                <div class="avatar">
+                    A
+                </div>
+
+                <div class="admin-info">
+
+                    <strong>
+                        Admin
+                    </strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- CONTENT -->
+
+        <div class="content">
+
+
+            <!-- WELCOME -->
+
+            <section class="welcome">
+
+                <div>
+
+                    <p class="eyebrow">
+                        WELCOME BACK 👋
+                    </p>
+
+                    <h2>
+                        Manage your portfolio
+                    </h2>
+
+                    <p>
+                        Everything you need to manage
+                        your personal website.
+                    </p>
+
+                </div>
+
+                <div class="welcome-decoration">
+                    ✦
+                </div>
+
+            </section>
+
+
+
+            <!-- STATS -->
+
+            <section class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ◈
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>
+                            TOTAL PROJECTS
+                        </span>
+
+                        <strong id="projectCount">
+                            0
+                        </strong>
+
+                        <small>
+                            Published projects
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ✉
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>
+                            MESSAGES
+                        </span>
+
+                        <strong id="messageCount">
+                            0
+                        </strong>
+
+                        <small>
+                            Contact submissions
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        ◆
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>
+                            SKILLS
+                        </span>
+
+                        <strong id="skillCount">
+                            0
+                        </strong>
+
+                        <small>
+                            Listed skills
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ●
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>
+                            STATUS
+                        </span>
+
+                        <strong class="online">
+                            Online
+                        </strong>
+
+                        <small>
+                            Firebase connected
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- MESSAGES -->
+
+            <section
+                id="messages"
+                class="panel"
+            >
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            INBOX
+                        </span>
+
+                        <h2>
+                            Recent Messages
+                        </h2>
+
+                    </div>
+
+                    <span
+                        id="messageCountLabel"
+                        class="count-label"
+                    >
+                        0 messages
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="messagesContainer"
+                    class="messages-container"
+                >
+
+                    <div class="loading">
+                        Loading messages...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- PROJECTS -->
+
+            <section
+                id="projects"
+                class="panel"
+            >
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            PORTFOLIO
+                        </span>
+
+                        <h2>
+                            Projects
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        id="addProjectBtn"
+                        class="primary-btn"
+                    >
+                        + Add Project
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="projectsContainer"
+                    class="projects-grid"
+                >
+
+                    <div class="loading">
+                        Loading projects...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- SKILLS -->
+
+            <section
+                id="skills"
+                class="panel"
+            >
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            EXPERTISE
+                        </span>
+
+                        <h2>
+                            Skills
+                        </h2>
+
+                    </div>
+
+
+                    <button
+                        id="addSkillBtn"
+                        class="primary-btn"
+                    >
+                        + Add Skill
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="skillsContainer"
+                    class="skills-grid"
+                >
+
+                    <div class="loading">
+                        Loading skills...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- PROFILE -->
+
+            <section
+                id="profile"
+                class="panel profile-panel"
+            >
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            PERSONAL
+                        </span>
+
+                        <h2>
+                            Profile
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-form">
+
+                    <label>
+                        Display Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileName"
+                        placeholder="Your name"
+                    >
+
+
+                    <label>
+                        Professional Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profileTitle"
+                        placeholder="Full Stack Developer"
+                    >
+
+
+                    <label>
+                        About
+                    </label>
+
+                    <textarea
+                        id="profileAbout"
+                        placeholder="Write something about yourself..."
+                    ></textarea>
+
+
+                    <button
+                        id="saveProfileBtn"
+                        class="primary-btn"
+                    >
+                        Save Profile
+                    </button>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<!-- PROJECT MODAL -->
+
+<div
+    id="projectModal"
+    class="modal"
+>
+
+    <div class="modal-box">
+
+        <button
+            class="modal-close"
+            id="closeProjectModal"
+        >
+            ×
+        </button>
+
+
+        <span class="section-label">
+            PROJECT
+        </span>
+
+        <h2>
+            Add Project
+        </h2>
+
+
+    <form id="projectForm">
+
+    <input
+        type="text"
+        id="projectTitle"
+        placeholder="Project Title"
+        required
+    >
+
+    <textarea
+        id="projectDescription"
+        placeholder="Project Description"
+        required
+    ></textarea>
+
+    <input
+        type="text"
+        id="projectTechnologies"
+        placeholder="HTML, CSS, JavaScript, Firebase"
+    >
+
+    <input
+        type="url"
+        id="projectLiveLink"
+        placeholder="https://example.com"
+    >
+
+    <input
+        type="url"
+        id="projectImage"
+        placeholder="Image URL"
+    >
+
+    <button type="submit">
+        Add Project
+    </button>
+
+</form>    
+    </div>
+
+</div>
+
+
+
+<script type="module" src="dashboard.js"></script>
+
+
+</body>
+
+</html>
